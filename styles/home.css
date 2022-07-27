@@ -44,7 +44,7 @@ nav {
 
 nav > a {
     color: var(--cor2);
-    padding: 15px;
+    padding: 8px;
     border-radius: 5px;
     text-decoration: none;
     transition-duration: .5s;
