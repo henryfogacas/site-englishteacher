@@ -1,0 +1,123 @@
+@charset "UTF-8"; 
+
+:root {
+
+    --cor0: #002868;
+    --cor1: #BF0A30;
+    --cor2: #FFFFFF;
+
+    --fonte-padrao: Arial, Verdana,Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue',cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor0),var(--cor1));
+    min-height: 135px;
+    padding-top: 40px;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    color:var(--cor2);
+    font-weight: lighter;
+    margin-bottom:40px;
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 15px;
+    box-shadow: 0px 5px 5px var(--cor0);
+    text-align: center;
+}
+
+nav > a {
+    color: var(--cor2);
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: .5s;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--cor0) ;
+    color: var(--cor2) ;
+}
+
+main {
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+main h2 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor2);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 30px; 
+    line-height: 1em;
+}
+
+ul {
+    padding: 10px;
+    list-style-position: inside;
+    columns: 2;
+}
+
+img {
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor0);
+    color: var(--cor2);
+    font-size: 1em;
+    padding: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+footer > a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
